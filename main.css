@@ -186,7 +186,24 @@ h1 {
 
 .boxelement--active {
     background: rgba(44, 53, 49, 0.5);
-    height: 400px;;
+    height: 400px;
+}
+
+.boxelement p {
+    max-width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+
+.boxelement--active p {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.boxelement--active.upcoming {
+    height: 340px;
 }
 
 .boxelement--active .expanded {
